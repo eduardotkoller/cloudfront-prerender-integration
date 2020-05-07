@@ -5,8 +5,8 @@
   "author": "Eduardo Koller <eduardo@bossabox.com>",
   "license": "MIT",
   "scripts": {
-    "create-lambda": "sed -i \"s/PRERENDER_TOKEN/$PRERENDER_TOKEN/g\" handler.js && sls deploy && sed -i \"s/$PRERENDER_TOKEN/PRERENDER_TOKEN/g\" handler.js",
-    "deploy": "node deploy.js && node invalidate.js"
+    "deploy": "sed -i \"s/PRERENDER_TOKEN/$PRERENDER_TOKEN/g\" handler.js && sls deploy && sed -i \"s/$PRERENDER_TOKEN/PRERENDER_TOKEN/g\" handler.js",
+    "map": "node deploy.js && node invalidate.js"
   },
   "devDependencies": {
     "aws-sdk": "^2.664.0",
