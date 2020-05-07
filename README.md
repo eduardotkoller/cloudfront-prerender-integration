@@ -1,8 +1,8 @@
 # Cloudfront Prerender Integration
 
-This is a simple script that creates a Lambda@Edge function to check if the User-Agent of the request made to cloudfront is a crawler/bot, and if so, redirects the response to the [prerender.io](prerender.io) service with your token.
+This is a simple script that creates a Lambda@Edge function to check if the User-Agent of the request made to cloudfront is a crawler/bot, and if so, redirects the response to the [prerender.io](https://prerender.io) service with your token.
 
-[prerender.io](prerender.io) loads your SPA, executes the javascript, waits for all the requests made by the SPA, and then returns the resulting HTML.
+[prerender.io](https://prerender.io) loads your SPA, executes the javascript, waits for all the requests made by the SPA, and then returns the resulting HTML.
 
 This is a good way to still use static front-ends and benefit from the ease of the deployment and low cost of this kind of solution, without the major drawback of bad SEO. If SEO is the main concern and reason to use server-side rendering, this can be an alternative.
 
