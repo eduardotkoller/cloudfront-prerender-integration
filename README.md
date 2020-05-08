@@ -8,7 +8,7 @@ This is a good way to still use static front-ends and benefit from the ease of t
 
 ## How to use
 
-You need two environment variables set during the run time of the scripts: `PRERENDER_TOKEN` (your prerender.io token) and `CLOUDFRONT_DISTRIBUTION_ID` (your SPA cloudfront distribution ID).
+You need two environment variables set during the run time of the scripts: `PRERENDER_TOKEN` (your prerender.io token) and `CLOUDFRONT_DISTRIBUTION_ID` (your SPA cloudfront distribution ID). You also need the AWS credentials configured or set in your environment variables.
 
 Then, run `yarn deploy` and `yarn map` afterwards.
 
